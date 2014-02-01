@@ -3,6 +3,9 @@ Firefox SpiderMonkey
 
 https://developer.mozilla.org/en-US/
 http://www.sitepoint.com/javascript-truthy-falsy/
+https://developer.mozilla.org/en-US/docs/Web/API/element
+https://developer.mozilla.org/en-US/docs/Web/Reference/Events
+
 
 > git status
 # On branch master
@@ -45,3 +48,164 @@ To git@github.com:escusado/monstar.git
 
 /Users/Toily/code/monstar ------------------------------------------------------------------------------------ ⭠ (master) 21:40:33
 >
+
+=============================
+
+5+5
+10
+4-2
+2
+3+4-2
+5
+5*8
+40
+3/2
+1.5
+3++
+ReferenceError: Invalid left-hand side expression in postfix operation
+var myVar = 4
+undefined
+myVar++
+4
+myVar
+5
+myVar--
+5
+myVar
+4
+myVar = myVar + 1
+5
+myVar = myVar - 1
+4
+myVar+=1
+5
+myVar+=6
+11
+4+'56'
+"456"
+4+'56wer'
+"456wer"
+4 === 4
+true
+4 === 4
+true
+4 === '4'
+false
+4 == '4'
+true
+4 === '4'
+false
+4 === 4
+true
+4 !== 4
+false
+4 !== 5
+true
+4 < 5
+true
+4 > 5
+false
+"str"+="ing"
+ReferenceError: Invalid left-hand side in assignment
+myVar = "str"
+"str"
+myVar+="ing"
+"string"
+
+while(index < 10){console.log(index); index+=1;}
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+for(var i=0;i<10;i+=1){console.log(i)}
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+if(true && true){console.log('verda')}
+verda
+undefined
+if(true && false){console.log('verda')}
+undefined
+if(true || true){console.log('verda')}
+verda
+undefined
+if(false || true){console.log('verda')}
+verda
+undefined
+if(false || true && (true) ){console.log('verda')}
+verda
+undefined
+if(false || true && (true||false) ){console.log('verda')}
+verda
+undefined
+
+(function(){console.log('esto es una func')})
+function (){console.log('esto es una func')}
+miFunc
+function (){console.log('esto es una func')}
+(function(){console.log('esto es una func')})
+function (){console.log('esto es una func')}
+(function(){console.log('esto es una func')})()
+esto es una func
+
+=======================
+
+document.getElementsByClassName('box')
+[
+<div class=​"box">​
+
+    ​</div>​
+,
+<div class=​"box">​
+
+    ​</div>​
+,
+<div class=​"box">​
+
+    ​</div>​
+]
+var myElements = document.getElementsByClassName('box')
+undefined
+myElements
+[
+<div class=​"box">​
+
+    ​</div>​
+,
+<div class=​"box">​
+
+    ​</div>​
+,
+<div class=​"box">​
+
+    ​</div>​
+]
+myElements[0]
+<div class=​"box">​
+
+    ​</div>​
+typeof myElements[0]
+"object"
+var myNode = myElements[0]
+undefined
+myNode.className
+"box"
+myNode.className = 'ball'
+"ball"
+myElements
