@@ -1,0 +1,5 @@
+Chrome v8
+Firefox SpiderMonkey
+
+https://developer.mozilla.org/en-US/
+http://www.sitepoint.com/javascript-truthy-falsy/
